@@ -10,6 +10,9 @@
 # Java class files
 *.class
 
+# Dr. Java backup files
+*.java~
+
 # generated files
 bin/
 gen/
@@ -41,7 +44,7 @@ proguard/
     Blog
     About
 
-    © 2014 GitHub, Inc.
+    ï¿½ 2014 GitHub, Inc.
     Terms
     Privacy
     Security
