@@ -13,6 +13,6 @@ public class DialogExample
     
     // Convert from a String --> Int
     int age = Integer.parseInt(ageString);
-    System.out.println("The age as an integer is: " + age);
+    System.out.println("The age as an integer is:
   }
 }
