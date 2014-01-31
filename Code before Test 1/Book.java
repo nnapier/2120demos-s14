@@ -17,6 +17,48 @@ public class Book
     material = "Hardback";
   }
   
+  /**  setTitle
+   *   @param inTitle New title
+   */ 
+  public void setTitle(String inTitle)
+  {
+    title = inTitle;
+  }
+  
+  /** setAuthor
+    * @param inAuthor New author
+    */
+  public void setAuthor(String inAuthor)
+  {
+    author = inAuthor;
+  }
+  
+  /** setPrice
+    * @param inPrice New price
+    */
+  public void setPrice( double inPrice )
+  {
+    price = inPrice;
+  }
+  
+  /** 
+   * The getTitle method returns the title of the book.
+   * @return The book title
+   */
+  public String getTitle()
+  {
+    return title;
+  }
+  
+  /**
+   * The getPrice method returns the price of the book.
+   * @return The book price
+   */ 
+  public double getPrice()
+  {
+    return price;
+  }
+  
   public void printData()
   {
     System.out.println("Title of book: " + title);
