@@ -8,12 +8,30 @@ public class Book
   private String material;  // Hardback, paperback, etc.
   
   // Constructor
+  /** Method: Book
+    * No argument constructor for the Book class
+    */
   public Book()
   {
     title = "Calculus book";
     author = "Briggs";
     price = 160;
     genre = "Textbook";
+    material = "Hardback";
+  }
+  
+  /** Method: Book 
+   * This constructor sets the title, author, and price.
+   * @param inTitle The title of the book
+   * @param inAuthor The author of the book
+   * @param inPrice The price of the book
+   */
+  public Book(String inTitle, String inAuthor, double inPrice)
+  {
+    title = inTitle;
+    author = inAuthor;
+    price = inPrice;
+    genre = "Fiction";
     material = "Hardback";
   }
   
@@ -39,6 +57,11 @@ public class Book
   public void setPrice( double inPrice )
   {
     price = inPrice;
+  }
+  
+  public void setGenre( String inGenre)
+  {
+    genre = inGenre;
   }
   
   /** 

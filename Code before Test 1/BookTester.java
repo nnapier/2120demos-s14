@@ -29,5 +29,12 @@ public class BookTester
     
     book2.printData();
     
+    // Construct an object that uses the 3-parameter Constructor
+    Book book3 = new Book( "Pride and Prejudice", "Jane Austen", 12.35);
+    book3.setGenre("Drama");
+    book3.printData();
+    
+    
+    
   }
 }
