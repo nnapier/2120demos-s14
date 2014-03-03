@@ -26,5 +26,16 @@ public class StringForLoopDemo
       }      
     }
     System.out.println("Count is: " + count);
-  }
+  
+    // Build a String that consists of every-other-letter
+    // of the original String. 
+    String result = "";
+    for (int i=0; i<name.length(); i= i+2)
+    {
+      result = result + name.charAt(i);
+    }
+    // SOP this new String
+    System.out.println("The new String is: " + result);
+  
+  } 
 }
