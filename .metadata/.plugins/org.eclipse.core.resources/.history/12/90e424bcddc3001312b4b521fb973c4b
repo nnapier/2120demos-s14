@@ -1,0 +1,89 @@
+import java.util.ArrayList;
+
+/** Class: Library
+ * @author Nannette Napier
+ * @version 1.0
+ * Course: ITEC 2120 Spring 2014
+ * Written: Apr 14, 2014
+ *
+ * This class ---
+ * 
+ * Purpose:
+ */
+
+public class Library
+{
+	// Instance variables
+	private String name;  // Name of library
+	private String address; // Address of library
+	private ArrayList<Book> bookList;
+
+	// Constructor
+	public Library()
+	{
+		name = "Georgia Gwinnett College Library";
+		address = "1000 University Center Lane, Lawrenceville";
+		bookList = new ArrayList<Book>();
+	}
+
+	/** Get the name
+	 * @return the name
+	 */
+	public String getName()
+	{
+		return name;
+	}
+
+	/** Change the value of the name
+	 * @param name the name to set
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	/** Get the address
+	 * @return the address
+	 */
+	public String getAddress()
+	{
+		return address;
+	}
+
+	/** Change the value of the address
+	 * @param address the address to set
+	 */
+	public void setAddress(String address)
+	{
+		this.address = address;
+	}
+
+	/** Get the bookList
+	 * @return the bookList
+	 */
+	public ArrayList<Book> getBookList()
+	{
+		return bookList;
+	}
+
+	/** Change the value of the bookList
+	 * @param bookList the bookList to set
+	 */
+	public void setBookList(ArrayList<Book> bookList)
+	{
+		this.bookList = bookList;
+	}
+	
+	/**
+	 * This method will add the provided book to the
+	 * library's bookList
+	 * @param inBook
+	 */
+	public void add(Book inBook)
+	{
+		bookList.add(inBook);
+	}
+	
+	
+	
+}

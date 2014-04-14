@@ -72,7 +72,57 @@ public class Book
     price = inPrice;
   }
   
-  public void printData()
+  
+  
+  /** Get the author
+ * @return the author
+ */
+public String getAuthor()
+{
+	return author;
+}
+
+/** Change the value of the author
+ * @param author the author to set
+ */
+public void setAuthor(String author)
+{
+	this.author = author;
+}
+
+/** Get the genre
+ * @return the genre
+ */
+public String getGenre()
+{
+	return genre;
+}
+
+/** Change the value of the genre
+ * @param genre the genre to set
+ */
+public void setGenre(String genre)
+{
+	this.genre = genre;
+}
+
+/** Get the material
+ * @return the material
+ */
+public String getMaterial()
+{
+	return material;
+}
+
+/** Change the value of the material
+ * @param material the material to set
+ */
+public void setMaterial(String material)
+{
+	this.material = material;
+}
+
+public void printData()
   {
     System.out.println("Title of book: " + title );
     System.out.println("Author of book: " + author );
