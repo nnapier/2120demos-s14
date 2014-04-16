@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+/** Class: WrapperDemo
+ * @author Nannette Napier
+ * @version 1.0
+ * Course: ITEC 2120 Spring 2014
+ * Written: Apr 16, 2014
+ *
+ * This class ---
+ * 
+ * Purpose:
+ */
+
+public class WrapperDemo
+{	
+	public static void main(String[] args)
+	{
+		// Create an ArrayList of Integers
+		ArrayList<Integer> nums = new ArrayList<Integer>();
+		
+		// Add to the arraylist
+		nums.add(20);
+		nums.add(15);
+		nums.add(4);
+		nums.add(9);
+
+		// Find the sum and the average
+		double sum = 0;
+		for (Integer element : nums)
+		{
+			sum = sum + element;
+		}
+		
+		// find the average
+		double average = sum/nums.size();
+		
+		System.out.println("Average is: " + average);
+		
+		ArrayList<Double> doubles = new ArrayList<Double>();
+		
+		ArrayList<Character> chars = new ArrayList<Character>();
+	}
+
+}

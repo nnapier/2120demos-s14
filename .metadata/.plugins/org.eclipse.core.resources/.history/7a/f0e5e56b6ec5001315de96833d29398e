@@ -27,7 +27,6 @@ public class LibraryTester
 		myLibrary.add(book3);
 		
 		System.out.println(myLibrary);
-		System.out.println( myLibrary.getAveragePrice() );
 
 	}
 

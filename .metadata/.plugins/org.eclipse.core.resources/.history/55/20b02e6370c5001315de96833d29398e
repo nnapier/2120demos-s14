@@ -175,8 +175,10 @@ public class Library
 			{
 				maxPrice = price;
 			}
+			
+			
+			
 		}
-		
 		//Return the maxPrice
 		return maxPrice;
 	}

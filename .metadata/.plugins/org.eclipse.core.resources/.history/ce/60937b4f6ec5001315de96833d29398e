@@ -132,53 +132,7 @@ public class Library
 	 */
 	public double getAveragePrice()
 	{
-		// Initialize average to 0
-		double average = 0;
 		
-		// Use a for loop to compute the sum
-		double sum = 0;
-		for( Book element : bookList )
-		{
-			sum = sum + element.getPrice();
-		}
-		
-		//Compute the average by dividing sum by count
-		if( bookList.size() > 0 )
-		{
-			average = sum/bookList.size();
-		}
-		
-		//Return the average
-		return average;
-			
-		
-	}
-	
-	/**
-	 * This method returns the most expensive 
-	 * book price
-	 * @return most expensive book price
-	 */
-	public double getMostExpensivePrice()
-	{
-		//Initalize maxPrice to (Price of the first book)
-		Book firstbook = bookList.get(0);
-		double maxPrice = firstbook.getPrice();
-		
-		//For loop to get the price of this book
-		for( Book element : bookList )
-		{
-			double price = element.getPrice();
-			
-			//If the price is > maxPrice, reset the maxPrice
-			if( price > maxPrice )
-			{
-				maxPrice = price;
-			}
-		}
-		
-		//Return the maxPrice
-		return maxPrice;
 	}
 	
 }
