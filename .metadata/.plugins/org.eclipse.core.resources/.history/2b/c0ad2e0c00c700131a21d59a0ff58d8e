@@ -27,8 +27,6 @@ public class Book
   // Constructors
   public Book()
   {
-	  bookId = nextBookId;
-	  nextBookId = nextBookId+1;
     title = "Gone with the Wind";
     author = "Margaret Mitchell";
     price = 4.50;
@@ -44,8 +42,6 @@ public class Book
    */
   public Book(String inTitle, String inAuthor, double inPrice)
   {
-	  bookId = nextBookId;
-	  nextBookId = nextBookId + 1;
     title = inTitle;
     author = inAuthor;
     price = inPrice;
@@ -131,41 +127,6 @@ public void setMaterial(String material)
 	this.material = material;
 }
 
-
-
-
-/** Get the bookId
- * @return the bookId
- */
-public int getBookId()
-{
-	return bookId;
-}
-
-/** Change the value of the bookId
- * @param bookId the bookId to set
- */
-public void setBookId(int bookId)
-{
-	this.bookId = bookId;
-}
-
-/** Get the nextBookId
- * @return the nextBookId
- */
-public static int getNextBookId()
-{
-	return nextBookId;
-}
-
-/** Change the value of the nextBookId
- * @param nextBookId the nextBookId to set
- */
-public static void setNextBookId(int nextBookId)
-{
-	Book.nextBookId = nextBookId;
-}
-
 public void printData()
   {
     System.out.println("Title of book: " + title );
@@ -183,7 +144,6 @@ public String toString()
 {
 	return "Book [title=" + title + ", author=" + author + ", price=" + price
 			+ ", genre=" + genre + ", material=" + material + "]" +
-			", bookId is: " + bookId + 
 					"\n";
 }
   

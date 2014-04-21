@@ -44,8 +44,6 @@ public class Book
    */
   public Book(String inTitle, String inAuthor, double inPrice)
   {
-	  bookId = nextBookId;
-	  nextBookId = nextBookId + 1;
     title = inTitle;
     author = inAuthor;
     price = inPrice;

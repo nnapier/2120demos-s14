@@ -26,7 +26,7 @@ public class BookTester
 		
 		// Create a book3
 		Book book3 = new Book();
-		System.out.println("Book 3: " + book3);  // Automatically calls toString
+		System.out.println("Book 3: " + bookd);  // Automatically calls toString
 			
 	}
 
