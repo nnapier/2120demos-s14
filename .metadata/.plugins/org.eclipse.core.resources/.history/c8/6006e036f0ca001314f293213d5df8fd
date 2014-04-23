@@ -47,8 +47,8 @@ public class CharacterDemo
 			}
 		}
 		
-		//Set result to true if the password contained 
-		//at least one number, one uppercase, and one lowercase
+		//set result to true or false based off of the other 3 boolean
+		//expressions
 		if(atLeastOneNumber == true && atLeastOneUpperCase == true
 				&& atLeastOneLowerCase == true)
 		{

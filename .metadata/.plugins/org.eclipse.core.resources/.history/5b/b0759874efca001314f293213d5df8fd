@@ -47,13 +47,7 @@ public class CharacterDemo
 			}
 		}
 		
-		//Set result to true if the password contained 
-		//at least one number, one uppercase, and one lowercase
-		if(atLeastOneNumber == true && atLeastOneUpperCase == true
-				&& atLeastOneLowerCase == true)
-		{
-			result = true;
-		}
+		
 		return result;
 	}
 	

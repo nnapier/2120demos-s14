@@ -11,52 +11,6 @@
 
 public class CharacterDemo
 {
-	public static boolean isValidPassword(String password)
-	{
-		boolean result = false;
-		boolean atLeastOneNumber = false;
-		boolean atLeastOneUpperCase = false;
-		boolean atLeastOneLowerCase = false;
-		
-		//password contains at least 1 number, 1 uppercase letter
-		//and 1 lowercase letter
-		
-		// for each character in the string
-		for(int i = 0; i < password.length(); i++)
-		{
-			// Get the character
-			char ch = password.charAt(i);
-			
-			// Check if the character is a number.
-			// if it is, set the atLeastOneNumber to true
-			if( Character.isDigit(ch) )
-			{
-				atLeastOneNumber = true;
-			}
-			// Check if the character is uppercase.
-			// if it is, set the atLeastOneUpperCase to true
-			else if( Character.isUpperCase(ch) )
-			{
-				atLeastOneUpperCase = true;
-			}
-			// Check if the character is a lowercase.
-			// if it is, set the atLeastOneLowerCase to true
-			else if ( Character.isLowerCase(ch) )
-			{
-				atLeastOneLowerCase = true;
-			}
-		}
-		
-		//Set result to true if the password contained 
-		//at least one number, one uppercase, and one lowercase
-		if(atLeastOneNumber == true && atLeastOneUpperCase == true
-				&& atLeastOneLowerCase == true)
-		{
-			result = true;
-		}
-		return result;
-	}
-	
 	public static String checkSSN2(String ssn)
 	{
 		String result =  "";
